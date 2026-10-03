@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Un proyecto tecnológico estudiantil que explora controlar el cursor con movimiento natural.">
+<title>AirMouse — Proyecto tecnológico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site-shell">
+
+<header class="nav-shell">
+<div class="container-wide nav-inner">
+
+<a href="index.html" class="brand">
+<span class="brand-mark">✦</span>
+<span class="brand-word">Air<span>Mouse</span></span>
+</a>
+
+<nav class="nav-links" aria-label="Navegación principal">
+<a href="index.html" class="nav-link">El proyecto</a>
+<a href="software.html" class="nav-link">Software</a>
+<a href="aportar.html" class="nav-link">Aportar</a>
+</nav>
+
+<div class="nav-actions">
+<button class="icon-button" data-theme-toggle aria-label="Cambiar tema">☀</button>
+<button class="icon-button mobile-trigger" data-mobile-toggle aria-label="Abrir menú">☰</button>
+</div>
+
+</div>
+
+<nav class="mobile-menu" data-mobile-menu hidden>
+<a href="index.html" class="nav-link">El proyecto</a>
+<a href="software.html" class="nav-link">Software</a>
+<a href="aportar.html" class="nav-link">Aportar</a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="container-wide hero-grid">
+
+<div class="hero-copy reveal">
+<div class="eyebrow mono-label">Proyecto tecnológico ✦ 7.º año</div>
+
+<h1>Una nueva forma de <em>interactuar.</em></h1>
+
+<p class="hero-lede">
+AirMouse explora qué pasa cuando dejamos el mouse sobre el escritorio y llevamos el control a la mano. Movimiento natural, electrónica y una conexión inalámbrica para mover el cursor.
+</p>
+
+<div class="hero-cta">
+<a class="button button-primary button-wide" href="#como-funciona">Conocer el proyecto ↓</a>
+<a class="button button-ghost" href="software.html">Ver software →</a>
+</div>
+
+<div class="hero-note">
+<span class="status-dot"></span>
+Prototipo en desarrollo
+</div>
+</div>
+
+<div class="hero-diagram reveal" aria-label="Diagrama visual del dispositivo AirMouse">
+
+<div class="orbit orbit-one"></div>
+<div class="orbit orbit-two"></div>
+<div class="orbit orbit-three"></div>
+
+<div class="coord-label">x: 042 · y: 118</div>
+
+<div class="device-card">
+
+<div class="device-top">
+<span class="device-label">AIRMOUSE / UNIDAD 01</span>
+<span class="device-led"></span>
+</div>
+
+<div class="device-body">
+<div class="device-ring">✦</div>
+
+<div class="device-copy">
+<strong>Rastreo</strong>
+<small> de posición<br>del puntero</small>
+</div>
+</div>
+
+<div class="device-top">
+<span class="device-label">ENLACE DE MOVIMIENTO</span>
+<span class="device-label">ACTIVO</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="hero-scroll">
+<span>deslizá para explorar</span>
+</div>
+
+</section>
+
+<div class="intro-band">
+<div class="container-wide intro-band-inner">
+
+<p>Una interfaz técnica diseñada para presentar la arquitectura, los componentes y el funcionamiento del sistema AirMouse.</p>
+
+<div class="spec-list">
+<span>SENSORES INERCIALES</span>
+<span>BLUETOOTH</span>
+<span>CONTROL DE CURSOR</span>
+</div>
+
+</div>
+</div>
+
+<section class="section-space container-wide" id="proyecto">
+
+<div class="section-heading reveal">
+
+<div>
+<div class="eyebrow mono-label">01 / La idea</div>
+<h2>Tecnología que se adapta <em>a vos.</em></h2>
+</div>
+
+<p class="section-heading-copy">
+No buscamos reemplazar todo lo que ya existe. Construimos una alternativa para aprender: detectar el movimiento, traducirlo y descubrir qué tan intuitiva puede ser una interfaz hecha por estudiantes.
+</p>
+
+</div>
+
+<div class="bento">
+
+<article class="bento-card tall reveal">
+<div class="card-glow"></div>
+<div class="card-index">01 — PRESENCIA</div>
+<div class="card-icon">↗</div>
+
+<h3>El gesto como entrada</h3>
+
+<p>
+La mano no necesita desplazarse sobre una superficie para controlar el cursor. AirMouse utiliza un sensor inercial para detectar cambios de orientación y movimiento en el aire, capturando los datos generados por cada gesto realizado por el usuario.
+
+Estos datos son procesados por el sistema para identificar variaciones en la orientación de la mano y relacionarlas con los movimientos del cursor. De esta manera, una inclinación o desplazamiento controlado puede convertirse en una acción dentro del dispositivo conectado.
+
+El objetivo es reemplazar el movimiento físico sobre una superficie por una interacción basada en el movimiento de la mano, manteniendo una respuesta configurable y adaptable a las necesidades de cada usuario.
+
+</p>
+
+<div class="card-foot">✦ Movimiento detectado</div>
+</article>
+
+<article class="bento-card reveal">
+<div class="card-index">02 — ENLACE</div>
+<div class="card-icon">⌁</div>
+
+<h3>Sin cables de por medio</h3>
+
+<p>
+La comunicación inalámbrica mediante Bluetooth permite conectar AirMouse con distintos dispositivos compatibles, como computadoras, teléfonos y televisores con soporte para Bluetooth HID.
+
+</p>
+</article>
+
+<article class="bento-card reveal">
+<div class="card-index">03 — AJUSTE</div>
+<div class="card-icon">⌖</div>
+
+<h3>Tu forma de usarlo</h3>
+
+<p>
+AirMouse permite configurar la sensibilidad y la respuesta del sistema para adaptar la detección del movimiento y la velocidad de desplazamiento del cursor a las preferencias de cada usuario.
+
+</p>
+</article>
+
+<article class="bento-card wide reveal">
+<div class="card-index">04 — PROPÓSITO</div>
+
+<h3>Accesibilidad también es hacerse preguntas.</h3>
+
+<p>
+¿Cómo podemos transformar el movimiento natural de la mano en una forma de interacción precisa, configurable y accesible?
+
+AirMouse explora esta pregunta mediante sensores de movimiento, procesamiento de datos y comunicación inalámbrica, buscando desarrollar una alternativa de interacción que pueda adaptarse a distintas necesidades y formas de uso.
+</p>
+
+</article>
+
+</div>
+</section>
+
+<section class="flow-section section-space" id="como-funciona">
+
+<div class="container-wide">
+
+<div class="section-heading reveal">
+
+<div>
+<div class="eyebrow mono-label">02 / El recorrido</div>
+<h2>De la mano al <em>cursor.</em></h2>
+</div>
+
+<p class="section-heading-copy">
+Cuatro etapas permiten comprender el funcionamiento completo de AirMouse. Desde la detección del movimiento hasta la respuesta del dispositivo, cada componente procesa y transmite información para convertir la orientación de la mano en una interacción precisa y en tiempo real.
+</p>
+
+</div>
+
+<div class="flow">
+
+<div class="flow-step reveal">
+<span class="flow-number">01</span>
+<div class="card-icon">↗</div>
+<h3>Mové</h3>
+<p>La mano cambia su orientación y dirección en el espacio. Estos movimientos funcionan como la entrada principal del sistema y permiten controlar AirMouse de forma natural, sin depender de una superficie.</p>
+<span class="flow-arrow">›</span>
+</div>
+
+<div class="flow-step reveal">
+<span class="flow-number">02</span>
+<div class="card-icon">⌁</div>
+<h3>Detectá</h3>
+<p>Los sensores inerciales registran los cambios de movimiento y orientación. El sistema obtiene estos datos para identificar cómo se está desplazando o inclinando la mano en cada momento.</p>
+<span class="flow-arrow">›</span>
+</div>
+
+<div class="flow-step reveal">
+<span class="flow-number">03</span>
+<div class="card-icon">◉</div>
+<h3>Traducí</h3>
+<p>La electrónica procesa la información capturada por los sensores. Los datos se interpretan y transforman en instrucciones que representan el movimiento que debe realizar el cursor.</p>
+<span class="flow-arrow">›</span>
+</div>
+
+<div class="flow-step reveal">
+<span class="flow-number">04</span>
+<div class="card-icon">⌖</div>
+<h3>Controlá</h3>
+<p>Bluetooth transmite las instrucciones al dispositivo conectado. El cursor responde en tiempo real al movimiento detectado, permitiendo interactuar con computadoras, teléfonos, televisores y otros dispositivos compatibles.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section-space container-wide" id="compatibilidad">
+
+<div class="section-heading reveal">
+
+<div>
+<div class="eyebrow mono-label">03 / En contexto</div>
+<h2>Hecho para funcionar <em>con lo real.</em></h2>
+</div>
+
+<p class="section-heading-copy">
+Un proyecto tecnológico también se construye a partir de las condiciones de uso. Estas son algunas de las necesidades, decisiones y limitaciones que tenemos en cuenta durante el desarrollo de AirMouse.
+</p>
+
+</div>
+
+<div class="compat-grid">
+
+<div class="compat-panel reveal">
+
+<h3>Lo que necesitamos</h3>
+
+<div class="compat-item">
+⌁
+<div>
+<strong>Una conexión Bluetooth</strong>
+<span>El dispositivo transmite los datos de forma inalámbrica mediante Bluetooth hacia dispositivos compatibles con el sistema de interacción.</span>
+</div>
+</div>
+
+<div class="compat-item">
+⌖
+<div>
+<strong>Un cursor para controlar</strong>
+<span>La información capturada por los sensores se transforma en desplazamientos del cursor para realizar acciones de interacción de forma natural.</span>
+</div>
+</div>
+
+<div class="compat-item">
+?
+<div>
+<strong>Un poco de calibración</strong>
+<span>Cada usuario puede tener una forma diferente de sostener y mover el dispositivo, por lo que el sistema puede requerir ajustes para adaptar la respuesta del movimiento.</span>
+</div>
+</div>
+<div class="compat-item">
+  ⚙
+  <div>
+    <strong> Un software de configuración</strong>
+    <span>El software permite establecer y ajustar los parámetros necesarios para adaptar la respuesta del sistema al movimiento del usuario.</span>
+  </div>
+</div>
+</div>
+
+<div class="compat-panel truth-panel reveal">
+
+<span class="mono-label">Nota del equipo</span>
+
+<h3>Probado, en evolución</h3>
+
+<p class="muted">
+AirMouse ya cuenta con una versión ejecutable del software para realizar las pruebas y configurar el funcionamiento del sistema. El desarrollo continúa incorporando ajustes y mejoras a partir de las pruebas realizadas con el prototipo.
+</p>
+
+<a href="software.html" class="button button-ghost" style="margin-top:1.5rem">
+Conocer el estado del software ›
+</a>
+
+</div>
+
+</div>
+</section>
+
+<section class="container-wide section-space">
+
+<div class="cta-panel reveal">
+
+<div>
+<div class="mono-label">Seguí la exploración</div>
+
+<h2>La tecnología se entiende mejor cuando se comparte.</h2>
+
+<p>
+Conocé el software o acompañá el proyecto de la forma que tenga sentido para vos.
+</p>
+</div>
+
+<div class="hero-cta">
+<a href="software.html" class="button button-primary">Ver software →</a>
+<a href="aportar.html" class="button button-ghost">Aportar →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+<div class="container-wide">
+
+<div class="footer-grid">
+
+<div>
+<a href="index.html" class="brand">
+<span class="brand-mark">✦</span>
+<span class="brand-word">Air<span>Mouse</span></span>
+</a>
+
+<p class="footer-copy">
+Un proyecto de estudiantes que convierte movimiento en interacción, paso a paso.
+</p>
+</div>
+
+<div class="footer-links">
+<span class="mono-label">Explorar</span>
+<a href="index.html">Inicio</a>
+<a href="software.html">Software</a>
+<a href="aportar.html">Aportar</a>
+</div>
+
+<div class="footer-links">
+<span class="mono-label">Proyecto</span>
+<a href="index.html#compatibilidad">Compatibilidad</a>
+<a href="index.html#como-funciona">Cómo funciona</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<span>HECHO PARA APRENDER · PROYECTO EN EVOLUCIÓN</span>
+<span>BLUETOOTH ✦ MOVIMIENTO ✦ CURIOSIDAD</span>
+</div>
+
+</div>
+</footer>
+
+<div class="cursor-dot">
+  <span></span>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
