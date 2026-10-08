@@ -15,6 +15,8 @@
   --muted-foreground: 220 11% 63%;
   --accent: 10 98% 72%;
   --accent-foreground: 224 33% 7%;
+  --success: 145 65% 65%;
+  --success-foreground: 224 33% 7%;
   --app-font-sans: 'Space Grotesk', sans-serif;
   --app-font-mono: 'DM Mono', monospace;
   --radius: 1.2rem;
@@ -37,6 +39,8 @@
   --muted-foreground: 221 12% 43%;
   --accent: 10 78% 57%;
   --accent-foreground: 38 33% 95%;
+  --success: 145 65% 28%;
+  --success-foreground: 38 33% 95%;
 }
 
 * {
@@ -329,9 +333,13 @@ a:focus-visible {
   border-color: hsl(var(--primary) / .65);
 }
 
-.button-accent {
-  background: hsl(var(--accent));
-  color: hsl(var(--accent-foreground));
+.button-success {
+  background: hsl(var(--success));
+  color: hsl(var(--success-foreground));
+}
+
+.button-success:hover {
+  background: hsl(var(--success) / .86);
 }
 
 .button-wide {
@@ -898,12 +906,12 @@ a:focus-visible {
 }
 
 .truth-panel {
-  background: hsl(var(--accent) / .1);
-  border-color: hsl(var(--accent) / .35);
+  background: hsl(var(--success) / .1);
+  border-color: hsl(var(--success) / .35);
 }
 
 .truth-panel .mono-label {
-  color: hsl(var(--accent));
+  color: hsl(var(--success));
 }
 
 @media (max-width: 720px) {
@@ -1010,10 +1018,10 @@ a:focus-visible {
 
 .download-status {
   align-items: center;
-  background: hsl(var(--accent) / .1);
-  border: 1px solid hsl(var(--accent) / .28);
+  background: hsl(var(--success) / .1);
+  border: 1px solid hsl(var(--success) / .28);
   border-radius: .65rem;
-  color: hsl(var(--accent));
+  color: hsl(var(--success));
   display: flex;
   font-family: var(--app-font-mono);
   font-size: .68rem;
@@ -1084,8 +1092,8 @@ a:focus-visible {
 }
 
 .support-note {
-  background: hsl(var(--accent) / .1);
-  border: 1px solid hsl(var(--accent) / .32);
+  background: hsl(var(--success) / .1);
+  border: 1px solid hsl(var(--success) / .32);
   border-radius: 1.2rem;
   padding: 1.5rem;
 }
