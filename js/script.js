@@ -2,7 +2,6 @@
 
 (function () {
 
-  console.log("AIRMOUSE JS FUNCIONANDO");
   const root = document.documentElement;
 
   // =========================
@@ -126,62 +125,48 @@
 
 
     // =========================
-// CLICK — EFECTO DEL CURSOR
-// =========================
+    // CLICK — EFECTO DEL CURSOR
+    // =========================
 
-window.addEventListener('mousedown', function () {
-  cursor.classList.add('cursor-click');
-});
-
-window.addEventListener('mouseup', function () {
-  cursor.classList.remove('cursor-click');
-});
-
-window.addEventListener('blur', function () {
-  cursor.classList.remove('cursor-click');
-});
-
-  }
-// =========================
-// ANIMACIONES DE ENTRADA
-// =========================
-
-const reveal = document.querySelectorAll('.reveal');
-
-console.log("REVEAL ENCONTRADOS:", reveal.length);
-
-if ('IntersectionObserver' in window) {
-
-  const observer = new IntersectionObserver(function (entries) {
-
-    entries.forEach(function (entry) {
-
-      if (entry.isIntersecting) {
-
-        entry.target.classList.add('is-visible');
-
-console.log("ANIMANDO:", entry.target);
-
-observer.unobserve(entry.target);
-      }
-
+    window.addEventListener('mousedown', function () {
+      cursor.classList.add('cursor-click');
     });
 
-  }, {
-    threshold: 0.15
-  });
+    window.addEventListener('mouseup', function () {
+      cursor.classList.remove('cursor-click');
+    });
 
-  reveal.forEach(function (element) {
-    observer.observe(element);
-  });
+    window.addEventListener('blur', function () {
+      cursor.classList.remove('cursor-click');
+    });
 
-} else {
+  }
+  // =========================
+  // ANIMACIONES DE ENTRADA
+  // =========================
 
-  reveal.forEach(function (element) {
-    element.classList.add('is-visible');
-  });
+  const reveal = document.querySelectorAll('.reveal');
 
-}
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    reveal.forEach(function (element) {
+      observer.observe(element);
+    });
+  } else {
+    reveal.forEach(function (element) {
+      element.classList.add('is-visible');
+    });
+  }
   // =========================
   // ICONO DEL TEMA
   // =========================
@@ -201,25 +186,6 @@ observer.unobserve(entry.target);
 
   }
 
-
-  // =========================
-  // BOTÓN DE APOYO
-  // =========================
-
-  const support = document.querySelector('[data-support]');
-  const confirmation = document.querySelector('[data-support-confirm]');
-
-  if (support && confirmation) {
-
-    support.addEventListener('click', function () {
-
-      support.textContent = 'Intención registrada →';
-
-      confirmation.hidden = false;
-
-    });
-
-  }
 
 })();
 
