@@ -1440,3 +1440,24 @@ button[disabled] {
     0 0 12px hsl(var(--primary) / 0.8),
     0 0 24px hsl(var(--primary) / 0.45);
 }
+
+/* Componentes para Soporte, Equipo y opciones de aporte */
+.support-form{display:grid;gap:.65rem;margin-top:1.4rem}
+.support-form label{color:hsl(var(--foreground));font-size:.8rem;font-weight:600;margin-top:.35rem}
+.support-form input,.support-form select,.support-form textarea{background:hsl(var(--background) / .7);border:1px solid hsl(var(--border));border-radius:.65rem;color:hsl(var(--foreground));font:inherit;font-size:.85rem;padding:.85rem .9rem;width:100%}
+.support-form textarea{resize:vertical}
+.support-form input:focus,.support-form select:focus,.support-form textarea:focus{border-color:hsl(var(--primary));outline:2px solid hsl(var(--primary) / .18)}
+.support-form select option{background:hsl(var(--card));color:hsl(var(--foreground))}
+.form-note{font-size:.72rem;line-height:1.5}
+.bank-options{border-top:1px solid hsl(var(--border));margin-top:1.6rem;padding-top:1.2rem}
+.bank-options h3{font-size:1rem;margin:0 0 .4rem}
+.bank-options>p{font-size:.78rem;line-height:1.5}
+.bank-list{display:grid;gap:.55rem;margin-top:.8rem}
+.bank-list .button{cursor:not-allowed;opacity:.45;justify-content:flex-start}
+.team-grid{display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+.team-card{background:hsl(var(--card) / .75);border:1px solid hsl(var(--border));border-radius:1.2rem;padding:1.5rem}
+.team-card h3{font-size:1.25rem;margin:1rem 0 .5rem}
+.team-role{color:hsl(var(--primary));font-size:.82rem;font-weight:600}
+.team-card p{font-size:.82rem;line-height:1.6}
+.team-contact{border-top:1px solid hsl(var(--border));margin-top:1.2rem;padding-top:1rem;overflow-wrap:anywhere}
+@media(max-width:760px){.team-grid{grid-template-columns:1fr}.team-card{padding:1.2rem}}
