@@ -1,1 +1,389 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Conocé al equipo detrás de AirMouse."><title>Equipo de desarrollo — AirMouse</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body class="site-shell"><header class="nav-shell"><div class="container-wide nav-inner"><a href="index.html" class="brand"><span class="brand-mark">✦</span><span class="brand-word">Air<span>Mouse</span></span></a><nav class="nav-links" aria-label="Navegación principal"><a href="index.html" class="nav-link">El proyecto</a><a href="software.html" class="nav-link">Software</a><a href="soporte.html" class="nav-link">Soporte</a><a href="equipo.html" class="nav-link active">Equipo</a><a href="aportar.html" class="nav-link">Aportar</a></nav><div class="nav-actions"><button class="icon-button" data-theme-toggle aria-label="Cambiar tema">☀</button><button class="icon-button mobile-trigger" data-mobile-toggle aria-label="Abrir menú">☰</button></div></div><nav class="mobile-menu" data-mobile-menu hidden><a href="index.html" class="nav-link">El proyecto</a><a href="software.html" class="nav-link">Software</a><a href="soporte.html" class="nav-link">Soporte</a><a href="equipo.html" class="nav-link active">Equipo de desarrollo</a><a href="aportar.html" class="nav-link">Aportar</a></nav></header><main><section class="container-wide page-hero"><div class="eyebrow mono-label reveal">Equipo / desarrollo</div><h1 class="reveal">Personas detrás del proyecto.</h1><p class="reveal">AirMouse se construye en equipo: diseño, electrónica, programación y pruebas se combinan para convertir una idea en un dispositivo que pueda seguir evolucionando.</p></section><section class="container-wide section-space" style="padding-top:0"><div class="section-heading reveal"><div><div class="eyebrow mono-label">01 / El equipo</div><h2>Desarrollo <em>compartido.</em></h2></div><p class="section-heading-copy">Reemplacen los campos entre corchetes por los datos reales de cada integrante antes de publicar.</p></div><div class="team-grid"><article class="team-card reveal"><span class="mono-label">Integrante 01</span><h3>[Nombre y apellido]</h3><p class="team-role">Programación y software</p><p class="muted">Participación: [tareas y aportes al proyecto].</p><p class="team-contact">Contacto: [correo o perfil público]</p></article><article class="team-card reveal"><span class="mono-label">Integrante 02</span><h3>[Nombre y apellido]</h3><p class="team-role">Electrónica y hardware</p><p class="muted">Participación: [tareas y aportes al proyecto].</p><p class="team-contact">Contacto: [correo o perfil público]</p></article><article class="team-card reveal"><span class="mono-label">Integrante 03</span><h3>[Nombre y apellido]</h3><p class="team-role">Diseño, pruebas y documentación</p><p class="muted">Participación: [tareas y aportes al proyecto].</p><p class="team-contact">Contacto: [correo o perfil público]</p></article></div><p class="muted" style="margin-top:1.5rem;font-size:.8rem">Los roles son ejemplos editables: agreguen o quiten tarjetas según la organización real del equipo.</p></section><section class="container-wide section-space" style="padding-top:0"><div class="cta-panel reveal"><div><div class="mono-label">¿Querés hablar con nosotros?</div><h2>Las preguntas también hacen avanzar el proyecto.</h2><p>Mandanos tu consulta o sugerencia desde la página de soporte.</p></div><a href="soporte.html" class="button button-primary">Ir a soporte →</a></div></section></main><footer class="site-footer"><div class="container-wide"><div class="footer-grid"><div><a href="index.html" class="brand"><span class="brand-mark">✦</span><span class="brand-word">Air<span>Mouse</span></span></a><p class="footer-copy">Un proyecto de estudiantes que convierte movimiento en interacción, paso a paso.</p></div><div class="footer-links"><span class="mono-label">Explorar</span><a href="index.html">Inicio</a><a href="software.html">Software</a><a href="soporte.html">Soporte</a><a href="equipo.html">Equipo de desarrollo</a><a href="aportar.html">Aportar</a></div><div class="footer-links"><span class="mono-label">Proyecto</span><a href="index.html#compatibilidad">Compatibilidad</a><a href="index.html#como-funciona">Cómo funciona</a></div></div><div class="footer-bottom"><span>HECHO PARA APRENDER · PROYECTO EN EVOLUCIÓN</span><span>BLUETOOTH ✦ MOVIMIENTO ✦ CURIOSIDAD</span></div></div></footer><div class="cursor-dot"><span></span></div><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conocé al equipo detrás de AirMouse.">
+
+    <title>Equipo de desarrollo — AirMouse</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site-shell">
+
+    <!-- ==============================
+         ENCABEZADO Y NAVEGACIÓN
+    =============================== -->
+
+    <header class="nav-shell">
+
+        <div class="container-wide nav-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="brand">
+                <span class="brand-mark">✦</span>
+                <span class="brand-word">Air<span>Mouse</span></span>
+            </a>
+
+            <!-- Menú para PC -->
+            <nav class="nav-links" aria-label="Navegación principal">
+
+                <a href="index.html" class="nav-link">
+                    El proyecto
+                </a>
+
+                <a href="software.html" class="nav-link">
+                    Software
+                </a>
+
+                <a href="soporte.html" class="nav-link">
+                    Soporte
+                </a>
+
+                <a href="equipo.html" class="nav-link active">
+                    Equipo
+                </a>
+
+                <a href="aportar.html" class="nav-link">
+                    Aportar
+                </a>
+
+            </nav>
+
+            <!-- Botones del encabezado -->
+            <div class="nav-actions">
+
+                <button
+                    class="icon-button"
+                    data-theme-toggle
+                    aria-label="Cambiar tema"
+                >
+                    ☀
+                </button>
+
+                <button
+                    class="icon-button mobile-trigger"
+                    data-mobile-toggle
+                    aria-label="Abrir menú"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Menú para celular -->
+        <nav class="mobile-menu" data-mobile-menu hidden>
+
+            <a href="index.html" class="nav-link">
+                El proyecto
+            </a>
+
+            <a href="software.html" class="nav-link">
+                Software
+            </a>
+
+            <a href="soporte.html" class="nav-link">
+                Soporte
+            </a>
+
+            <a href="equipo.html" class="nav-link active">
+                Equipo de desarrollo
+            </a>
+
+            <a href="aportar.html" class="nav-link">
+                Aportar
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==============================
+         CONTENIDO PRINCIPAL
+    =============================== -->
+
+    <main>
+
+        <!-- Presentación de la página -->
+        <section class="container-wide page-hero">
+
+            <div class="eyebrow mono-label reveal">
+                Equipo / desarrollo
+            </div>
+
+            <h1 class="reveal">
+                Personas detrás del proyecto.
+            </h1>
+
+            <p class="reveal">
+                AirMouse se construye en equipo: diseño, electrónica,
+                programación y pruebas se combinan para convertir una idea
+                en un dispositivo que pueda seguir evolucionando.
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             INTEGRANTES DEL EQUIPO
+        =============================== -->
+
+        <section
+            class="container-wide section-space"
+            style="padding-top:0"
+        >
+
+            <!-- Encabezado de la sección -->
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <div class="eyebrow mono-label">
+                        01 / El equipo
+                    </div>
+
+                    <h2>
+                        Desarrollo <em>compartido.</em>
+                    </h2>
+
+                </div>
+
+                <p class="section-heading-copy">
+        
+                </p>
+
+            </div>
+
+
+            <!-- Tarjetas de integrantes -->
+            <div class="team-grid">
+
+                <!-- Integrante 01 -->
+                <article class="team-card reveal">
+
+                    <span class="mono-label">
+                        Integrante 01
+                    </span>
+
+                    <h3>
+                        [Caceres Nahuel]
+                    </h3>
+
+                    <p class="team-role">
+                        Desarrollo web y software
+                    </p>
+
+                    <p class="muted">
+                        Participación: Responsable del diseño, desarrollo y mantenimiento de la página web de AirMouse, incluyendo su estructura, estilos, navegación y contenido. Participación conjunta en el desarrollo, configuración y pruebas del software del dispositivo.
+                    </p>
+
+                    <p class="team-contact">
+                        Contacto: caceressnahuel55@gmail.com
+                    </p>
+
+                </article>
+
+
+                <!-- Integrante 02 -->
+                <article class="team-card reveal">
+
+                    <span class="mono-label">
+                        Integrante 02
+                    </span>
+
+                    <h3>
+                        Rojas Marcos
+                    </h3>
+
+                    <p class="team-role">
+                       Hardware, electrónica y software
+                    </p>
+
+                    <p class="muted">
+                        Participación: Responsable del diseño, montaje e integración de los componentes físicos de AirMouse, incluyendo el ESP32 y el sensor MPU6050, así como las conexiones, calibraciones y pruebas del dispositivo. Participación conjunta en el desarrollo, configuración y pruebas del software.
+                    </p>
+
+                    <p class="team-contact">
+                        Contacto: marcosm2810a@gmail.com
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- Nota sobre los roles -->
+            <p
+                class="muted"
+                style="margin-top:1.5rem;font-size:.8rem"
+            >
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             LLAMADA A LA ACCIÓN
+        =============================== -->
+
+        <section
+            class="container-wide section-space"
+            style="padding-top:0"
+        >
+
+            <div class="cta-panel reveal">
+
+                <div>
+
+                    <div class="mono-label">
+                        ¿Querés hablar con nosotros?
+                    </div>
+
+                    <h2>
+                        Las preguntas también hacen avanzar el proyecto.
+                    </h2>
+
+                    <p>
+                        Mandanos tu consulta o sugerencia desde la página
+                        de soporte.
+                    </p>
+
+                </div>
+
+                <a
+                    href="soporte.html"
+                    class="button button-primary"
+                >
+                    Ir a soporte →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         PIE DE PÁGINA
+    =============================== -->
+
+    <footer class="site-footer">
+
+        <div class="container-wide">
+
+            <div class="footer-grid">
+
+                <!-- Identidad del proyecto -->
+                <div>
+
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark">✦</span>
+                        <span class="brand-word">Air<span>Mouse</span></span>
+                    </a>
+
+                    <p class="footer-copy">
+                        Un proyecto de estudiantes que convierte movimiento
+                        en interacción, paso a paso.
+                    </p>
+
+                </div>
+
+
+                <!-- Enlaces principales -->
+                <div class="footer-links">
+
+                    <span class="mono-label">
+                        Explorar
+                    </span>
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="software.html">
+                        Software
+                    </a>
+
+                    <a href="soporte.html">
+                        Soporte
+                    </a>
+
+                    <a href="equipo.html">
+                        Equipo de desarrollo
+                    </a>
+
+                    <a href="aportar.html">
+                        Aportar
+                    </a>
+
+                </div>
+
+
+                <!-- Enlaces del proyecto -->
+                <div class="footer-links">
+
+                    <span class="mono-label">
+                        Proyecto
+                    </span>
+
+                    <a href="index.html#compatibilidad">
+                        Compatibilidad
+                    </a>
+
+                    <a href="index.html#como-funciona">
+                        Cómo funciona
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Información inferior del pie -->
+            <div class="footer-bottom">
+
+                <span>
+                    HECHO PARA APRENDER · PROYECTO EN EVOLUCIÓN
+                </span>
+
+                <span>
+                    BLUETOOTH ✦ MOVIMIENTO ✦ CURIOSIDAD
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==============================
+         CURSOR PERSONALIZADO
+    =============================== -->
+
+    <div class="cursor-dot">
+        <span></span>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
