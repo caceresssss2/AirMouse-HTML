@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -177,7 +176,25 @@
                     ¿En qué te ayudamos?
                 </h2>
 
-                <form class="support-form">
+                <!-- FORMULARIO CONECTADO A FORMSUBMIT -->
+                <form
+                    class="support-form"
+                    action="https://formsubmit.co/support.airmouse@gmail.com"
+                    method="POST"
+                >
+
+                    <!-- Configuración del envío -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="Nueva consulta desde la web de AirMouse"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table"
+                    >
 
                     <!-- Nombre -->
                     <label for="support-name">
@@ -200,7 +217,7 @@
 
                     <input
                         id="support-email"
-                        name="correo"
+                        name="email"
                         type="email"
                         placeholder="tunombre@correo.com"
                         required
@@ -221,23 +238,23 @@
                             Elegí una opción
                         </option>
 
-                        <option>
+                        <option value="Problema con el dispositivo">
                             Problema con el dispositivo
                         </option>
 
-                        <option>
+                        <option value="Instalación o uso del software">
                             Instalación o uso del software
                         </option>
 
-                        <option>
+                        <option value="Compatibilidad">
                             Compatibilidad
                         </option>
 
-                        <option>
+                        <option value="Sugerencia o mejora">
                             Sugerencia o mejora
                         </option>
 
-                        <option>
+                        <option value="Otro">
                             Otro
                         </option>
                     </select>
@@ -257,19 +274,18 @@
                     ></textarea>
 
 
-                    <!-- Botón de envío deshabilitado -->
+                    <!-- Botón de envío habilitado -->
                     <button
                         class="button button-primary"
-                        type="button"
-                        disabled
+                        type="submit"
                     >
-                        Envío online próximamente
+                        Enviar consulta
                     </button>
 
                     <p class="muted form-note">
-                        El formulario visual está preparado, pero el envío
-                        de mensajes todavía necesita conectarse a un
-                        servicio de recepción.
+                        Completá los campos y enviá tu consulta.
+                        El equipo AirMouse recibirá el mensaje por correo
+                        una vez activado y verificado el servicio.
                     </p>
 
                 </form>
@@ -387,4 +403,3 @@
 
 </body>
 </html>
-```
